@@ -25,5 +25,7 @@ jobs:
       run: chmod +x gradlew
     - name: запускаем SUT
       run: java -jar ./artifacts/app-card-delivery.jar &
+    - name: Устанавливаем версию chromedriver
+      run: npm install -g chromedriver
     - name: Build with Gradle
       run: ./gradlew build
