@@ -26,4 +26,4 @@ jobs:
     - name: запускаем SUT
       run: java -jar ./artifacts/app-card-delivery.jar -P:profile=test &
     - name: Build with Gradle
-      run: ./gradlew build --scan
+      run: ./gradlew build --debug
